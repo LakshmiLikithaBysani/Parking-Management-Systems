@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parking Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🅿️ Parking Management System</h1>
+
+        <div class="form-section">
+
+            <input
+                type="text"
+                id="vehicleNumber"
+                placeholder="Enter vehicle number"
+            >
+
+            <select id="vehicleType">
+
+                <option value="">Select Vehicle Type</option>
+
+                <option value="Car">🚗 Car</option>
+
+                <option value="Bike">🏍️ Bike</option>
+
+            </select>
+
+            <button onclick="parkVehicle()">
+                Park Vehicle
+            </button>
+
+        </div>
+
+
+        <div class="summary">
+
+            <div>
+                <h3>Total Slots</h3>
+                <p id="totalSlots">5</p>
+            </div>
+
+            <div>
+                <h3>Occupied</h3>
+                <p id="occupiedSlots">0</p>
+            </div>
+
+            <div>
+                <h3>Available</h3>
+                <p id="availableSlots">5</p>
+            </div>
+
+        </div>
+
+
+        <h2>Parking Slots</h2>
+
+        <div id="parkingArea" class="parking-area">
+        </div>
+
+
+        <div id="message"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

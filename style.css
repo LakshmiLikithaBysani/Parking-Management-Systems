@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.summary div {
+    background-color: #eeeeee;
+    padding: 15px 35px;
+    border-radius: 8px;
+}
+
+.summary p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+.parking-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.slot {
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #d9f7d9;
+    border: 2px solid green;
+}
+
+.slot.occupied {
+    background-color: #ffd6d6;
+    border-color: red;
+}
+
+.slot-number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.vehicle {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.exit-btn {
+    margin-top: 10px;
+    background-color: red;
+    padding: 7px 12px;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
